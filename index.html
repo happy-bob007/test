@@ -1,2 +1,45 @@
 <!DOCTYPE html>
-<html><title>Slope</title><head></head><body style="margin: 0px; height: 100vh;"><iframe src="https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/sk1bx/WebStarterkit@27197d685502953065e3a3259b6e34f5acb94e65/src/sp1.5.xml&amp;container=ig" style="border: none; width: 100%; height: 100%; margin: 0px;"></iframe></body></html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Buttons</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        #content {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="loadSlope()">Slope</button>
+    <button onclick="loadPaperIO2()">Paper.io 2</button>
+    <div id="content"></div>
+
+    <script>
+        function loadSlope() {
+            document.title = "Slope";
+            document.body.innerHTML = '<iframe src="https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/sk1bx/WebStarterkit@27197d685502953065e3a3259b6e34f5acb94e65/src/sp1.5.xml&amp;container=ig" style="border: none; width: 100%; height: 100%; margin: 0px;"></iframe>';
+        }
+
+        function loadPaperIO2() {
+            document.title = "Paper.io 2";
+            document.body.innerHTML = '<iframe src="https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/bobydob/JSEngine@b8b8a03997f38305098c2f2f5fe14907463cd23b/build/ppo2/ppo2.xml&amp;container=ig" style="border: none; width: 100%; height: 100%; margin: 0px;"></iframe>';
+        }
+    </script>
+</body>
+</html>
