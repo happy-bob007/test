@@ -21,7 +21,12 @@
         }
         #content {
             width: 100%;
+            height: calc(100% - 50px); /* Adjusting for the button height */
+        }
+        iframe {
+            width: 100%;
             height: 100%;
+            border: none;
         }
     </style>
 </head>
@@ -33,12 +38,12 @@
     <script>
         function loadSlope() {
             document.title = "Slope";
-            document.body.innerHTML = '<iframe src="https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/sk1bx/WebStarterkit@27197d685502953065e3a3259b6e34f5acb94e65/src/sp1.5.xml&amp;container=ig" style="border: none; width: 100%; height: 100%; margin: 0px;"></iframe>';
+            document.getElementById('content').innerHTML = '<iframe src="https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/sk1bx/WebStarterkit@27197d685502953065e3a3259b6e34f5acb94e65/src/sp1.5.xml&amp;container=ig"></iframe>';
         }
 
         function loadPaperIO2() {
             document.title = "Paper.io 2";
-            document.body.innerHTML = '<iframe src="https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/bobydob/JSEngine@b8b8a03997f38305098c2f2f5fe14907463cd23b/build/ppo2/ppo2.xml&amp;container=ig" style="border: none; width: 100%; height: 100%; margin: 0px;"></iframe>';
+            document.getElementById('content').innerHTML = '<iframe src="https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/bobydob/JSEngine@b8b8a03997f38305098c2f2f5fe14907463cd23b/build/ppo2/ppo2.xml&amp;container=ig"></iframe>';
         }
     </script>
 </body>
